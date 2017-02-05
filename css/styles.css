@@ -190,6 +190,12 @@ body {
     background-size: 101%;
 }
 
+/*======PROGRAMM======*/
+.programm {
+    margin-top: 475px;
+}
+
+
 @media (min-width: 768px) {
     body {
         background-image: url("../img/desktop.jpg");
