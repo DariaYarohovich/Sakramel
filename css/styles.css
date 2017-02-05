@@ -16,11 +16,10 @@ body {
     margin: 0 auto;
     font-family: "Gilroy Light", "Arial", sans-serif;
     font-size: 16px;
-    background-image: url(../img/mobile.jpg);
+    /*background-image: url(../img/mobile.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
-
-    opacity:0.3;
+    opacity:0.3;*/
 }
 
 .container {
@@ -164,4 +163,56 @@ body {
     background-image: url("../img/ribbon-mobile.png");
     background-repeat: no-repeat;
     background-position: -15px 16px;
+}
+
+/*======WORKS=====*/
+
+.works {
+    background: #7c798e url("../img/works_bg_mobile.png") no-repeat;
+    min-height: 706px;
+}
+
+.block-title {
+    display: flex;
+    justify-content: center;
+}
+
+.block-title__content {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 20px 50px;
+    border-bottom: 2px solid #ff6e9c;
+}
+
+.top-block__gallery {
+    width: 270px;
+    height: 175px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 6px solid #767485;
+    background: url("../img/works_slider_bg_mobile.png") no-repeat;
+}
+
+.works__slider-img {
+    display: block;
+    margin: 10px auto;
+}
+
+.swiper-button-next {
+    width: 17px;
+    height: 30px;
+    background: url("../img/arrow-next_mobile.jpg");
+    transform: translate(5%, 25%);
+}
+
+.swiper-button-prev {
+    width: 17px;
+    height: 30px;
+    background: url("../img/arrow-prev_mobile.jpg");
+    transform: translate(-25%, 25%);
 }
