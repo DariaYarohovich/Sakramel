@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!--Мой-->
 <header class="header">
-    <div class="header__top_mob container">
-        <div class="header__open">
-            <i class="header__open-icon"></i> <!-- header__open-icon_active -->
+    <div class="container">
+        <div class="header__top_mob">
+            <div class="header__open">
+                <i class="header__open-icon"></i> <!-- header__open-icon_active -->
+            </div>
+            <p class="header__tel">8 (495) 666-24-18</p>
         </div>
-        <p class="header__tel">8 (495) 666-24-18</p>
+        <div class="header__nav-block">
+            <ul class="header__nav">
+                <li><a class="header__nav-item" href="#">О нас</a></li>
+                <li><a class="header__nav-item" href="#">Отзывы</a></li>
+                <li><a class="header__nav-item" href="#">Стоимость</a></li>
+                <li><a class="header__nav-item" href="#">Программа</a></li>
+                <li><a class="header__nav-item" href="#">Контакты</a></li>
+            </ul>
+            <p class="header__contacts">г. Москва,<br>
+                Ленинская слобода, д.26 стр.6<br>
+                8 (495) 666-24-18<br>
+                Работаем с 10:00 до 19:00
+            </p>
+        </div>
+        <button class="btn header__btn">Заказать консультацию</button>
     </div>
-    <div class="header__nav-block">
-        <ul class="header__nav">
-            <li><a class="header__nav-item" href="#">О нас</a></li>
-            <li><a class="header__nav-item" href="#">Отзывы</a></li>
-            <li><a class="header__nav-item" href="#">Стоимость</a></li>
-            <li><a class="header__nav-item" href="#">Программа</a></li>
-            <li><a class="header__nav-item" href="#">Контакты</a></li>
-        </ul>
-        <p class="header__contacts">г. Москва,<br>
-            Ленинская слобода, д.26 стр.6<br>
-            8 (495) 666-24-18<br>
-            Работаем с 10:00 до 19:00
-        </p>
-    </div>
-    <button class="btn header__btn">Заказать консультацию</button>
 </header>
-<!--Мой-->
 <div class="top-block">
     <div class="container">
         <div class="top-block__logo">
@@ -41,7 +41,6 @@
         <button class="btn top-block__btn">Заказать консультацию</button>
     </div>
 </div>
-<!--Моя форма-->
 <div class="works">
     <div class="block-title">
         <h2 class="block-title__content">Оцените работы наших выпускников</h2>
@@ -60,7 +59,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <form class="from top-block__form" action="#" method="POST">
+    <form class="form works__form" action="#" method="POST">
         <p class="form__title">Узнайте подробности обучения</p>
         <input class="form__input" type="text" placeholder="Ваше имя" required>
         <input class="form__input" type="tel" placeholder="Ваш номер телефона" required>
@@ -69,30 +68,81 @@
 </div>
 <!--Мой + форма-->
 <div class="programm">
-    <h2 class="block-title">Программа обучения</h2>
-    <div class="programm__block">
-        <div class="programm__block-title">
-            <p class="programm__item-is programm__item-is_name">Базовый маникюр 4 дня</p>
-            <p class="programm__item-is programm__item-is_name">Базовый маникюр + педикюр 6 дней</p>
+    <div class="container">
+        <div class="block-title">
+            <h2 class="block-title__content block-title__content-programm">Программа обучения</h2>
         </div>
-        <div class="programm__item">
-            <p class="programm__item-name"></p>
-            <p class="programm__item-is"></p>
-            <p class="programm__item-is"></p>
+        <div class="programm__block">
+            <div class="programm__block-title">
+                <p class="programm__item-is programm__item-is_name programm__item-is_name-empty"></p>
+                <p class="programm__item-is programm__item-is_name">Базовый маникюр<br> <span>4 дня</span></p>
+                <p class="programm__item-is programm__item-is_name">Базовый маникюр<br> + педикюр <span>6 дней</span></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
+            <div class="programm__item">
+                <p class="programm__item-name">Lorem ipsum lorem ipsum lorem ipsum lorem</p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-yes"></p>
+                <p class="programm__item-is programm__item-is_cell programm__item-is_cell-no"></p>
+            </div>
         </div>
+        <form class="from programm__form">
+            <p class="form__title form__title_programm">Узнать дату</p>
+            <div class="form__left">
+                <input class="form__input form__input-programm" type="text" placeholder="Ваше имя" required>
+                <input class="form__input form__input-programm" type="tel" placeholder="Ваш номер телефона" required>
+            </div>
+            <div class="form__right">
+                <label class="form__input-label">
+                    <input class="form__radio-type" type="radio" name="service-type">
+                    <span class="form__radio-indicator"></span>
+                    Базовый маникюр</label>
+                <label class="form__input-label">
+                    <input class="form__radio-type" type="radio" name="service-type">
+                    <span class="form__radio-indicator"></span>
+                    Базовый маникюр + педикюр</label>
+                <button class="btn form__btn programm-form__btn" type="submit">Отправить</button>
+            </div>
+        </form>
     </div>
-    <form class="from programm__form">
-        <p class="form__title">Узнать дату</p>
-        <div class="form__left">
-            <input class="form__input" type="text" placeholder="Ваше имя" required>
-            <input class="form__input" type="tel" placeholder="Ваш номер телефона" required>
-        </div>
-        <div class="form__right">
-            <label><input class="form__radio-type" type="radio" name="service-type"> Базовый маникюр</label>
-            <label><input class="form__radio-type" type="radio" name="service-type"> Базовый маникюр + педикюр</label>
-            <button class="btn form__btn" type="submit">Отправить</button>
-        </div>
-    </form>
 </div>
 <div class="reviews">
     <h2 class="block-title">Реальные истории наших учеников</h2>
