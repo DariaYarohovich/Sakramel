@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Saramel</title>
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <p class="header__tel">8 (495) 666-24-18</p>
     </div>
     <div class="header__nav-block">
-        <ul class="header__nav container">
+        <ul class="header__nav">
             <li><a class="header__nav-item" href="#">О нас</a></li>
             <li><a class="header__nav-item" href="#">Отзывы</a></li>
             <li><a class="header__nav-item" href="#">Стоимость</a></li>
@@ -31,18 +32,35 @@
     <button class="btn header__btn">Заказать консультацию</button>
 </header>
 <!--Мой-->
-<div class="top-block container">
-    <div class="top-block__logo">
-        <img src="img/logo-mobile.png">
-    </div>
-    <h1 class="top-block__title">Обучение<br> маникюру<br> и педикюру<br> <span>для новичков</span><br> с нуля</h1>
-    <button class="btn top-block__btn">Заказать консультацию</button>
+<div class="top-block">
+    <div class="container">
+        <div class="top-block__logo">
+            <img src="img/logo.png">
+        </div>
+        <h1 class="top-block__title">Обучение<br> маникюру и педикюру<br> <span>для новичков</span><br> с нуля</h1>
+        <button class="btn top-block__btn">Заказать консультацию</button>
+    </div>>
 </div>
 <!--Моя форма-->
 <div class="works">
-    <h2 class="block-title"></h2>
-    <div class="top-block__gallery"></div>
-    <form class="from top-block__form">
+    <div class="block-title">
+        <h2 class="block-title__content">Оцените работы наших выпускников</h2>
+    </div>
+
+    <div class="top-block__gallery">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="works__slider-img" src="img/works_slider-img.jpg"></div>
+                <div class="swiper-slide"><img class="works__slider-img" src="img/works_slider-img.jpg"></div>
+                <div class="swiper-slide"><img class="works__slider-img" src="img/works_slider-img.jpg"></div>
+                <div class="swiper-slide"><img class="works__slider-img" src="img/works_slider-img.jpg"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <form class="from top-block__form" action="#" method="POST">
         <p class="form__title">Узнайте подробности обучения</p>
         <input class="form__input" type="text" placeholder="Ваше имя" required>
         <input class="form__input" type="tel" placeholder="Ваш номер телефона" required>
@@ -117,5 +135,18 @@
 <footer class="footer">
     <p class="main-footer__copyright"></p>
 </footer>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30
+    });
+</script>
 </body>
 </html>
