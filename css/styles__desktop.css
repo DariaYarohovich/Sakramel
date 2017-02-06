@@ -103,6 +103,10 @@
     /*======PROGRAMM======*/
     .programm {
         background-image: url("../img/programm_bg-desc.png");
+        background-size: 128%;
+        background-position: center -740px;
+        padding-top: 260px;
+        padding-bottom: 110px;
     }
     .block-title__content.block-title__content-programm {
         border-bottom-width: 3px;
@@ -215,12 +219,11 @@
 
     /*======WORKS======*/
     .works {
-        background: url(../img/works_bg.gif) no-repeat center;
+        background: url(../img/works_bg.png) no-repeat center;
         margin-top: -87px;
-        padding-bottom: 0px;
-        background-size: 112%;
-        background-position: center 5px;
-        min-height: 1219px
+        padding-bottom: 60px;
+        background-size: 128%;
+        background-position: center 25px;
     }
 
     .block-title {
@@ -243,6 +246,12 @@
         background: url(../img/arrow-next.jpg);
         transform: translate(-18%, 0)
     }
+    .form__input {
+        font-size: 25px;
+    }
+    .form__btn {
+        font-size: 30px;
+    }
     
     /*======FAQ======*/
     .faq {
@@ -264,6 +273,11 @@
     }
 
     /*======ADVANTAGES======*/
+    .advantages {
+        background-image: url("../img/advantages-bg-desk.png");
+        background-size: 130%;
+        background-position: center -90px;
+    }
     .swiper-wrapper {
         width: 1200px;
         margin: 0 auto;
@@ -338,7 +352,6 @@
 
     .form__title {
         font-size: 32px;
-        width: 193px;
         margin: 30px auto;
     }
 }
