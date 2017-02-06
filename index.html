@@ -315,10 +315,35 @@
     <div class="block-title">
         <h2 class="block-title__content block-title__content_faq">Часто задаваемые вопросы</h2>
     </div>
-    <article class="faq__item">
-        <div class="fqa__item-title">В других школах обучение 2 месяца, почему у вас 4 дня?</div>
-        <p class="faq__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-    </article>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <article class="faq__item">
+                <div class="fqa__item-title">В других школах обучение 2 месяца, почему у вас 4 дня?</div>
+                <p class="faq__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="faq__item">
+                    <div class="fqa__item-title">В других школах обучение 2 месяца, почему у вас 4 дня?</div>
+                    <p class="faq__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="faq__item">
+                    <div class="fqa__item-title">В других школах обучение 2 месяца, почему у вас 4 дня?</div>
+                    <p class="faq__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="faq__item">
+                    <div class="fqa__item-title">В других школах обучение 2 месяца, почему у вас 4 дня?</div>
+                    <p class="faq__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </article>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 </div>
 <div class="add-questions">
     <div class="block-title">
@@ -352,7 +377,14 @@
         <button class="btn form__btn form__btn_add-questions" type="submit">Отправить</button>
     </form>
 </div>
-<div class="map"></div>
+<div class="map" id="map">
+    <div class="map__info-block">
+        <p class="map__address">г. Москва,<br>
+        Ленинградская слобода, д.26, стр. 6
+        8 (495) 666-24-18<br>
+        Работаем с 10:00 до 19:00</p>
+    </div>
+</div>
 <footer class="footer">
     <p class="main-footer__copyright">
         <span>2016</span>
@@ -371,6 +403,34 @@
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 30
+    });
+</script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    /*================MAP=================*/
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                    center: [55.755814, 37.617635],
+                    zoom: 14,
+                    controls: []
+                }),
+                myPlacemark = new ymaps.Placemark([55.755814, 37.617635], {
+                    hintContent: "Ленинградская слобода, д.26, стр. 6",
+                    balloonContent: "ООО Сакрамел"
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: "img/map_baloon.png",
+                    // Размеры метки.
+                    iconImageSize: [41, 59],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-20, -59]
+                });
+
+        myMap.geoObjects.add(myPlacemark);
     });
 </script>
 </body>
