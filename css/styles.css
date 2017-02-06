@@ -211,8 +211,9 @@ body {
 
 .works {
     background: url("../img/works_bg_mobile.png") no-repeat;
-    background-position: 0 -62px;
+    background-position: 0 -65px;
     margin-top: -17px;
+    padding-bottom: 10px;
 }
 .block-title {
     display: flex;
@@ -265,7 +266,8 @@ body {
     padding-top: 15px;
     padding-bottom: 59px;
     background-image: url("../img/programm_bg-mobile.png");
-    background-position: 0 -122px;
+    background-position: 0 -124px;
+    background-size: 103%;
 }
 .block-title__content-programm {
     margin: 15px 10px 15px 10px;
@@ -426,25 +428,6 @@ form {
     margin: 20px 50px;
     border-bottom: 1px solid #ff6e9c;
 }
-/*======FOOTER======*/
-.footer {
-    margin-top: 1282px;
-    background-color: #767485;
-}
-.main-footer__copyright {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
-.main-footer__copyright span {
-    display: block;
-    color: #fff;
-    font-family: "Fira Sans Light", "Arial", sans-serif;
-    font-size: 14px;
-}
-.main-footer__copyright span:first-child::before {
-    content: '\00a9';
-}
 
 .swiper-button-next {
     width: 17px;
@@ -464,8 +447,10 @@ form {
 
 .reviews {
     background: url("../img/reviews-bg-mobile.png") no-repeat;
-    background-position: 0 -45px;
+    background-position: 0 -106px;
     padding-bottom: 100px;
+    padding-top: 20px;
+    margin-top: -17px;
 }
 
 .block-title__content_grey {
@@ -589,7 +574,8 @@ form {
     padding-bottom: 38px;
     background: url("../img/advantages-bg-mobile.png") no-repeat;
     background-position: 0 -42px;
-    margin-top: -16px;
+    background-size: 104%;
+    margin-top: -23px;
     font-family: "Fira Sans Light", "Arial", sans-serif;
     text-align: center;
 }
@@ -672,7 +658,7 @@ form {
     letter-spacing: 0.2px;
 }
 .advantages__form {
-    margin-top: 47px;
+    margin-top: 20px;
     margin-left: 27px;
     margin-right: 27px;
     padding: 10px 19px;
@@ -699,7 +685,7 @@ form {
 
 /*=======FAQ=======*/
 .faq {
-    padding: 110px 30px 175px 30px;
+    padding: 130px 30px 175px 30px;
     background-image: url("../img/faq_bg_mobile.png");
     background-position: 0 -89px;
 }
@@ -715,6 +701,7 @@ form {
 }
 .faq__item {
     font-size: 14px;
+    color: #515067;
 }
 .fqa__item-title {
     padding: 15px 27px;
@@ -734,8 +721,9 @@ form {
 /*======ADD QUESTIONS=====*/
 
 .add-questions {
-    background: url(../img/addQuestion-bg-mobile.png) no-repeat center;
-    min-height: 916px;
+    background: url(../img/addQuestion-bg-mobile.png) no-repeat 0 0;
+    background-size: 107%;
+    padding-bottom: 35px;
     font-family: "Fira Sans Light", "Arial", sans-serif;
     color: white;
 }
@@ -744,6 +732,7 @@ form {
     font-size: 18px;
     line-height: 25px;
     font-weight: 600;
+    border-bottom: none;
 }
 
 .add-questions__container {
@@ -793,9 +782,11 @@ form {
 }
 
 .add-questions__form {
-    margin-top: 548px;
     padding: 0 25px;
+    padding-bottom: 40px;
+    margin-top: 40px;
 }
+
 .form__title_add-questions {
     margin: 0;
     margin-bottom: 12px;
@@ -803,16 +794,36 @@ form {
     font-size: 18px;
     text-transform: uppercase;
 }
+
 .form__input_add-questions {
     padding: 20px 15px;
     font-family: "Fira Sans Regular", "Arial", sans-serif;
     font-size: 18px;
 }
+
 .form__btn_add-questions {
     padding: 18px 0;
     font-family: "Fira Sans Medium", "Arial", sans-serif;
     font-size: 18px;
 }
 
+/*======FOOTER======*/
+.footer {
+    background-color: #767485;
+}
+.main-footer__copyright {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.main-footer__copyright span {
+    display: block;
+    color: #fff;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+}
+.main-footer__copyright span:first-child::before {
+    content: '\00a9';
+}
 
 
