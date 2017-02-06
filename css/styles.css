@@ -498,6 +498,225 @@ form {
         display: none;
     }
 
+.block-title__content {
+    font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 20px 50px;
+    border-bottom: 1px solid #ff6e9c;
+}
+
+.top-block__gallery {
+    width: 270px;
+    height: 175px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 6px solid #767485;
+    background: url("../img/works_slider_bg_mobile.png") no-repeat;
+}
+
+.works__slider-img {
+    display: block;
+    margin: 10px auto;
+}
+
+.swiper-button-next {
+    width: 17px;
+    height: 30px;
+    background: url("../img/arrow-next_mobile.jpg");
+    transform: translate(5%, 25%);
+}
+
+.swiper-button-prev {
+    width: 17px;
+    height: 30px;
+    background: url("../img/arrow-prev_mobile.jpg");
+    transform: translate(-25%, 25%);
+}
+
+/*======REVIEWS=====*/
+
+.reviews {
+    background: url("../img/reviews-bg-mobile.png") no-repeat;
+    min-height: 637px;
+}
+
+.block-title__content_grey {
+    color: #767485;
+}
+
+.reviews__item {
+    width: 267px;
+    margin: 0 auto;
+}
+
+.reviews__author {
+    text-align: center;
+}
+
+.reviews__autor-photo {
+    width: 84px;
+    height: 84px;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+
+.reviews__author-name {
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #767485;
+    margin: 0;
+}
+
+.reviews__author-course {
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #767485;
+    margin: 0;
+}
+
+.reviews__author-address {
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff6492;
+    margin: 5px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.reviews__author-address::before {
+    content: "";
+    position: absolute;
+    left: 93px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon_insta.png");
+    background-repeat: no-repeat;
+}
+
+.reviews__text-block {
+    background-color: white;
+    padding: 22px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.reviews__text-block::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    transform: translate(0, -50%) rotate(45deg);
+    background: white;
+}
+
+.review__text {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: justify;
+    margin: 0;
+}
+
+.reviews__photo {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.see-all {
+    text-align: center;
+    color: #ff6694;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    background: white;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #9fdd56;
+}
+
+.reviews .swiper-pagination-bullets {
+    bottom: 48px;
+}
+
+/*======ADVANTAGES=====*/
+
+.advantages {
+    background: url("../img/advantages-bg-mobile.png") no-repeat;
+    margin-top: -16px;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    text-align: center;
+}
+
+.advantage__item {
+    width: 268px;
+    margin: 0 auto;
+    padding-top: 180px;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantage__item::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 200px;
+    top: 0;
+}
+
+.advantage__item.advantage__item_experience::before {
+     background: url(../img/advantage-cup.png);
+    top: -20px;
+}
+
+.advantage__item.advantage__item_full-service::before {
+    background: url(../img/advantage-flowers.png);
+}
+
+.advantage__title {
+    background-color: #9ac22e;
+    flex-grow: 1;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+.advantage__text {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.advantages .swiper-pagination-bullet-active {
+    background-color: #ff6694;
+}
     /*======PROGRAMM======*/
     .programm {
         margin-top: 483px;
