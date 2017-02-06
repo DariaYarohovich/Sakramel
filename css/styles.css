@@ -26,6 +26,10 @@
     font-family: Fira Sans Bold;
     src: url('../fonts/FiraSans-Bold.ttf');
 }
+@font-face {
+    font-family: Fira Sans LightItalic;
+    src: url('../fonts/FiraSans-LightItalic.ttf');
+}
 
 body {
     width: 320px;

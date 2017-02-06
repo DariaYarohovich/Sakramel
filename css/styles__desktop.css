@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+    .form__input {
+        background: rgba(255, 255, 255, 0.8);
+    }
     body {
         /*background-image: url("../img/desktop.jpg");*/
         width: auto;
@@ -72,8 +75,9 @@
     .top-block {
         background-image: url(../img/top-block_bg-desc.png);
         background-size: 1890px;
-        background-position: -298px -130px;
+        background-position: center -130px;
         padding-bottom: 71px;
+        background-repeat: no-repeat;
     }
     .top-block__logo img {
         width: auto;
@@ -98,12 +102,16 @@
 
     /*======PROGRAMM======*/
     .programm {
-        margin-top: 483px;
         background-image: url("../img/programm_bg-desc.png");
+    }
+    .block-title__content.block-title__content-programm {
+        border-bottom-width: 3px;
+        margin-bottom: 55px;
     }
     .block-title__content {
         font-size: 45px;
         line-height: 45px;
+        border-bottom-width: 3px;
     }
     .block-title__content-programm {
         margin-bottom: 78px;
@@ -174,26 +182,44 @@
         display: flex;
         justify-content: space-between;
     }
+    .form__left {
+        width: 47%;
+    }
+    .form__right {
+        width: 47%;
+    }
+    .form__input-label {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+    .form__radio-indicator {
+        width: 25px;
+        height: 25px;
+    }
+    .form__radio-type:checked + .form__radio-indicator {
+        border: 5px solid #fff;
+    }
     .form__title.form__title_programm {
         font-size: 40px;
         line-height: 60px;
         border-bottom-width: 3px;
         margin-bottom: 49px;
     }
-
-    /*======FOOTER======*/
-    .main-footer__copyright span {
-        display: inline;
-        margin-right: 5px;
+    .form__input-programm {
+        font-size: 25px;
     }
-    .main-footer__copyright span:first-child::before {
-        display: none;
+    .programm-form__btn {
+        margin-top: -3px;
+        font-size: 27px;
     }
 
     /*======WORKS======*/
     .works {
         background: url(../img/works_bg.gif) no-repeat;
         margin-top: -87px;
+        padding-bottom: 0px;
+        background-size: 112%;
+        background-position: center 5px;
     }
 
     .block-title {
@@ -205,5 +231,85 @@
         height: 468px;
         border: 6px solid #767485;
         background: url(../img/works_slider_bg_desctop.png) no-repeat;
+    }
+    
+    /*======FAQ======*/
+    .faq {
+        background-image: url("../img/faq_bg_desc.png");
+        background-position: center 0;
+        padding: 300px 273px 470px 273px;
+    }
+    .faq__item {
+        margin-bottom: 15px;
+    }
+    .fqa__item-title {
+        font-size: 28px;
+        border-width: 2px;
+    }
+    .faq__item-content {
+        font-family: "Fira Sans LightItalic", "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /*======ADVANTAGES======*/
+    .swiper-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .swiper-slide {
+        width: 21% !important;
+    }
+    .advantage__title {
+        height: 105px;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+        line-height: 24px;
+    }
+    .advantage__text {
+        padding: 17px 10px;
+        height: 280px;
+        box-sizing: border-box;
+    }
+    .advantages .swiper-pagination {
+        display: none;
+    }
+    .advantages__form {
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 1135px;
+        padding: 15px 90px;
+        padding-bottom: 35px;
+    }
+    .form__title_adv {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .form__input_adv {
+        margin-right: 30px;
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+    .form__btn_adv {
+        font-family: "Gilroy Extra Bold", serif;
+        font-size: 26px;
+    }
+    .advantages__form-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    /*======FOOTER======*/
+    .main-footer__copyright span {
+        display: inline;
+        margin-right: 5px;
+    }
+    .main-footer__copyright span:first-child::before {
+        display: none;
     }
 }
