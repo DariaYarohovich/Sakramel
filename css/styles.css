@@ -668,7 +668,6 @@ form {
     box-sizing: border-box;
 }
 
-
 .add-questions__img {
     display: block;
     width: 64px;
@@ -825,7 +824,7 @@ form {
     }
     .programm__item-is span {
         font-size: 30px;
-        font-family: "Gilroy Extra Bold", serif;
+        font-family: "Gilroy Extra Bold";
     }
     .programm__item-is_cell {
         height: 80px;
@@ -850,5 +849,5 @@ form {
         font-family: "Gilroy Extra Bold", serif;
         font-size: 30px;
     }
-
 }
+
