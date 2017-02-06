@@ -313,6 +313,9 @@ body {
 .programm__item-is_cell-no {
     background-image: url("../img/icon-cross.png");
 }
+.programm__item_price {
+    display: none;
+}
 
 .programm__form {
     padding: 0 24px;
@@ -497,7 +500,7 @@ form {
 
     /*======PROGRAMM======*/
     .programm {
-        margin-top: 518px;
+        margin-top: 483px;
         background-image: url("../img/programm_bg-desc.png");
     }
     .block-title__content {
@@ -505,7 +508,7 @@ form {
         line-height: 45px;
     }
     .block-title__content-programm {
-        margin-bottom: 91px;
+        margin-bottom: 78px;
     }
     .programm__item-is_name-empty {
         display: block;
@@ -519,7 +522,7 @@ form {
     }
     .programm__item-is span {
         font-size: 30px;
-        font-family: "Gilroy Extra Bold";
+        font-family: "Gilroy Light";
     }
     .programm__item-is_cell {
         height: 80px;
@@ -543,6 +546,12 @@ form {
     .programm__item-is_name {
         font-family: "Gilroy Extra Bold";
         font-size: 30px;
+    }
+    .programm__item_mob {
+        display: none;
+    }
+    .programm__item_price {
+        display: flex;
     }
 }
 
