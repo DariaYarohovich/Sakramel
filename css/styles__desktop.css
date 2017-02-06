@@ -1,0 +1,192 @@
+@media (min-width: 768px) {
+    body {
+        background-image: url("../img/desktop.jpg");
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    /*======HEADER======*/
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header {
+        margin: 0 auto;
+        padding: 32px 0;
+        background-color: #767485;
+    }
+
+    .header__nav-block {
+        display: block;
+        background-color: transparent;
+        width: 58%;
+        margin: 0;
+    }
+
+    .header__btn {
+        display: block;
+        background-color: #ff6694;
+    }
+
+    .header__top_mob {
+        display: none;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+    .header__nav-item {
+        text-decoration: none;
+        font-size: 20px;
+        border-bottom: none;
+    }
+
+    .header__nav-item:hover {
+        border-bottom: 3px solid #ff6694;
+        margin-bottom: -3px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .header__btn {
+        margin: 0;
+        width: 34%;
+        font-size: 23px;
+        font-family: "Gilroy Light", "Arial", sans-serif;
+    }
+
+    /*======TOP-BLOCK======*/
+    .top-block {
+        background-image: url(../img/top-block_bg-desc.png);
+        background-size: 1890px;
+        background-position: -298px -130px;
+        padding-bottom: 71px;
+    }
+    .top-block__logo img {
+        width: auto;
+        padding: 9px 60px 40px 55px;
+        border-bottom: 3px solid #fff;
+    }
+    .top-block__title {
+        margin-top: 40px;
+        font-size: 60px;
+        line-height: 89px;
+    }
+    .top-block__title span {
+        font-size: 44px;
+        padding-top: 15px;
+        margin-bottom: -113px;
+        background-position: 268px 15px;
+        background-size: 56%;
+    }
+    .top-block__btn {
+        display: none;
+    }
+
+    /*======PROGRAMM======*/
+    .programm {
+        margin-top: 483px;
+        background-image: url("../img/programm_bg-desc.png");
+    }
+    .block-title__content {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .block-title__content-programm {
+        margin-bottom: 78px;
+    }
+    .programm__item-is_name-empty {
+        display: block;
+        width: 33%;
+    }
+    .programm__item-is {
+        width: 33%;
+        height: 91px;
+        margin-bottom: 6px;
+        padding-top: 9px;
+    }
+    .programm__item-is span {
+        font-size: 30px;
+        font-family: "Gilroy Light";
+    }
+    .programm__item-is_cell {
+        height: 80px;
+        margin-bottom: 6px;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+    }
+    .programm__item-is_cell-yes {
+        background-size: 62px;
+    }
+    .programm__item-is_cell-no {
+        background-size: 47px;
+    }
+    .programm__item-is_cell .programm__item-price {
+        font-family: "Fira Sans Bold", "Arial", sans-serif;
+        font-size: 45px;
+        color: #767485;
+    }
+    .programm__item-price i {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        display: inline-block;
+        background-image: url("../img/programm_price.png");
+        background-repeat: no-repeat;
+    }
+    .programm__item-name {
+        width: 33%;
+        height: 80px;
+        margin-bottom: 6px;
+        padding: 15px 37px;
+        font-size: 25px;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .programm__item-is_name {
+        font-family: "Gilroy Extra Bold", serif;
+        font-size: 30px;
+    }
+    .programm__item_mob {
+        display: none;
+    }
+    .programm__item_price {
+        display: flex;
+    }
+    .programm__form {
+        padding: 16px 190px;
+    }
+    .programm__form-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form__title.form__title_programm {
+        font-size: 40px;
+        line-height: 60px;
+        border-bottom-width: 3px;
+        margin-bottom: 49px;
+    }
+
+    /*======FOOTER======*/
+    .main-footer__copyright span {
+        display: inline;
+        margin-right: 5px;
+    }
+    .main-footer__copyright span:first-child::before {
+        display: none;
+    }
+}
