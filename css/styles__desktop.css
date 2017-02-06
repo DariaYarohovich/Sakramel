@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
     body {
-        background-image: url("../img/desktop.jpg");
+        /*background-image: url("../img/desktop.jpg");*/
         width: auto;
         margin: 0 auto;
     }
@@ -188,5 +188,22 @@
     }
     .main-footer__copyright span:first-child::before {
         display: none;
+    }
+
+    /*======WORKS======*/
+    .works {
+        background: url(../img/works_bg.png) no-repeat;
+        margin-top: -87px;
+    }
+
+    .block-title {
+        padding-top: 90px;
+    }
+
+    .top-block__gallery {
+        width: 714px;
+        height: 468px;
+        border: 6px solid #767485;
+        background: url(../img/works_slider_bg_desctop.png) no-repeat;
     }
 }
