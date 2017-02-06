@@ -16,10 +16,10 @@ body {
     margin: 0 auto;
     font-family: "Gilroy Light", "Arial", sans-serif;
     font-size: 16px;
-    background-image: url(../img/mobile.jpg);
+    /*background-image: url(../img/mobile.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
-    opacity:0.3;
+    opacity:0.3;*/
 }
 
 .container {
@@ -569,7 +569,6 @@ form {
     width: 268px;
     margin: 0 auto;
     padding-top: 180px;
-    padding-bottom: 50px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -591,6 +590,20 @@ form {
 
 .advantage__item.advantage__item_full-service::before {
     background: url(../img/advantage-flowers.png);
+    top: 21px;
+}
+
+.advantage__item.advantage__item_equipment::before {
+    background: url(../img/advantage-equipment.png);
+    top: 21px;
+    width: 148px;
+    height: 161px;
+}
+
+.advantage__item.advantage__item_diploma::before {
+    background: url(../img/advantage-diploma.png);
+    top: -19px;
+    width: 320px;
 }
 
 .advantage__title {
@@ -602,6 +615,8 @@ form {
     color: white;
     padding: 30px;
     margin: 0;
+    box-shadow: 0 -5px 10px 3px rgba(0,0,0,0.2);
+    position: relative;
 }
 
 .advantage__text {
@@ -612,8 +627,75 @@ form {
     margin: 0;
 }
 
+.advantages .swiper-pagination {
+    position: static;
+    margin-top: 5px;
+}
+
 .advantages .swiper-pagination-bullet-active {
     background-color: #ff6694;
+}
+
+/*======ADD QUESTIONS=====*/
+
+.add-questions {
+    background: url(../img/addQuestion-bg-mobile.png) no-repeat center;
+    min-height: 916px;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    color: white;
+}
+
+.block-title_add-questions {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.add-questions__container {
+    width: 267px;
+    margin: 0 auto;
+    margin-top: 66px;
+}
+
+.add-questions__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 102, 148, 0.7);
+    padding: 28px 20px 40px 20px;
+    box-sizing: border-box;
+}
+
+
+.add-questions__img {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.add-questions__question {
+    font-size: 16.8px;
+    line-height: 22.7px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+
+.add-questions__answer {
+    font-size: 16.8px;
+    line-height: 25.2px;
+}
+
+.add-questions .swiper-pagination-bullet-active {
+    background-color: #ff6694;
+}
+
+.add-questions .swiper-pagination {
+    position: static;
+    margin-top: 5px;
 }
 
 
