@@ -10,9 +10,26 @@
     font-family: Fira Sans Light;
     src: url('../fonts/FiraSans-Light.ttf');
 }
+@font-face {
+    font-family: Fira Sans Regular;
+    src: url('../fonts/FiraSans-Regular.ttf');
+}
+@font-face {
+    font-family: Fira Sans Medium;
+    src: url('../fonts/FiraSans-Medium.ttf');
+}
+@font-face {
+    font-family: Fira Sans MediumItalic;
+    src: url('../fonts/FiraSans-MediumItalic.ttf');
+}
+@font-face {
+    font-family: Fira Sans Bold;
+    src: url('../fonts/FiraSans-Bold.ttf');
+}
 
 body {
     width: 320px;
+    height: 5940px;
     margin: 0 auto;
     font-family: "Gilroy Light", "Arial", sans-serif;
     font-size: 16px;
@@ -303,7 +320,6 @@ body {
     align-items: center;
 }
 .programm__item-is_cell {
-    background-image: url("../img/icon-ok.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -396,6 +412,314 @@ form {
     width: 100%;
     padding: 12px 0;
     background-color: #ff6694;
+    font-size: 18px;
+}
+
+/*======FOOTER======*/
+.footer {
+    margin-top: 1282px;
+    background-color: #767485;
+}
+.main-footer__copyright {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.main-footer__copyright span {
+    display: block;
+    color: #fff;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+}
+.main-footer__copyright span:first-child::before {
+    content: '\00a9';
+}
+
+.swiper-button-next {
+    width: 17px;
+    height: 30px;
+    background: url("../img/arrow-next_mobile.jpg");
+    transform: translate(5%, 25%);
+}
+
+.swiper-button-prev {
+    width: 17px;
+    height: 30px;
+    background: url("../img/arrow-prev_mobile.jpg");
+    transform: translate(-25%, 25%);
+}
+
+/*======REVIEWS=====*/
+
+.reviews {
+    background: url("../img/reviews-bg-mobile.png") no-repeat;
+    background-position: 0 -45px;
+    padding-bottom: 100px;
+}
+
+.block-title__content_grey {
+    margin-top: 16px;
+    margin-bottom: 11px;
+    color: #767485;
+}
+
+.reviews__item {
+    width: 267px;
+    margin: 0 auto;
+}
+
+.reviews__author {
+    text-align: center;
+}
+
+.reviews__autor-photo {
+    width: 84px;
+    height: 84px;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+
+.reviews__author-name {
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #767485;
+    margin: 0;
+}
+
+.reviews__author-course {
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #767485;
+    margin: 0;
+}
+
+.reviews__author-address {
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff6492;
+    margin: 3px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.reviews__author-address::before {
+    content: "";
+    position: absolute;
+    left: 93px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon_insta.png");
+    background-repeat: no-repeat;
+}
+
+.reviews__text-block {
+    background-color: white;
+    padding: 22px;
+    padding-bottom: 7px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.reviews__text-block::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    transform: translate(0, -50%) rotate(45deg);
+    background: white;
+}
+
+.review__text {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: justify;
+    margin: 0;
+}
+
+.reviews__photo {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.see-all {
+    text-align: center;
+    color: #ff6694;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    background: white;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #9fdd56;
+}
+
+.reviews .swiper-pagination-bullets {
+    bottom: 53px;
+}
+
+/*======ADVANTAGES=====*/
+
+.advantages {
+    padding-bottom: 38px;
+    background: url("../img/advantages-bg-mobile.png") no-repeat;
+    background-position: 0 -42px;
+    margin-top: -16px;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    text-align: center;
+}
+
+.advantage__item {
+    width: 268px;
+    margin: 0 auto;
+    padding-top: 180px;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantage__item::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 200px;
+    top: 0;
+}
+
+.advantage__item.advantage__item_experience::before {
+     background: url(../img/advantage-cup.png);
+    top: -20px;
+}
+
+.advantage__item.advantage__item_full-service::before {
+    background: url(../img/advantage-flowers.png);
+}
+
+.advantage__title {
+    background-color: #9ac22e;
+    flex-grow: 1;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+.advantage__text {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.advantages .swiper-pagination-bullet-active {
+    background-color: #ff6694;
+}
+.block-title__content_adv {
+    margin-top: 35px;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.advantages__form {
+    margin-top: 47px;
+    margin-left: 27px;
+    margin-right: 27px;
+    padding: 10px 19px;
+    padding-bottom: 25px;
+    background-color: #ff6694;
+}
+.form__title_adv {
+    margin-top: 0;
+    margin-bottom: 23px;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 22px;
+}
+.form__input_adv {
+    padding: 17px 15px;
+    margin-bottom: 20px;
+}
+.form__btn_adv {
+    padding: 14px 12px;
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    font-size: 20px;
+    background-color: #a6ce39;
+    font-weight: 600;
+}
+
+/*=======FAQ=======*/
+.faq {
+    padding: 110px 30px 175px 30px;
+    background-image: url("../img/faq_bg_mobile.png");
+    background-position: 0 -89px;
+}
+.block-title__content_faq {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 14px;
+    font-family: "Fira Sans Regular", "Arial", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: #ff6e9c;
+    border-bottom: none;
+}
+.faq__item {
+    font-size: 14px;
+}
+.fqa__item-title {
+    padding: 15px 27px;
+    font-family: "Fira Sans Medium", "Arial", sans-serif;
+    text-align: center;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+.faq__item-content {
+    font-family: "Fira Sans MediumItalic", "Arial", sans-serif;
+    margin: 0;
+    padding: 17px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+/*======ADD-QUESTIONS======*/
+.add-questions__form {
+    margin-top: 548px;
+    padding: 0 25px;
+}
+.form__title_add-questions {
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: "Fira Sans Regular", "Arial", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.form__input_add-questions {
+    padding: 20px 15px;
+    font-family: "Fira Sans Regular", "Arial", sans-serif;
+    font-size: 18px;
+}
+.form__btn_add-questions {
+    padding: 18px 0;
+    font-family: "Fira Sans Medium", "Arial", sans-serif;
     font-size: 18px;
 }
 
@@ -497,226 +821,6 @@ form {
     .top-block__btn {
         display: none;
     }
-
-.block-title__content {
-    font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 10px;
-    margin: 20px 50px;
-    border-bottom: 1px solid #ff6e9c;
-}
-
-.top-block__gallery {
-    width: 270px;
-    height: 175px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    border: 6px solid #767485;
-    background: url("../img/works_slider_bg_mobile.png") no-repeat;
-}
-
-.works__slider-img {
-    display: block;
-    margin: 10px auto;
-}
-
-.swiper-button-next {
-    width: 17px;
-    height: 30px;
-    background: url("../img/arrow-next_mobile.jpg");
-    transform: translate(5%, 25%);
-}
-
-.swiper-button-prev {
-    width: 17px;
-    height: 30px;
-    background: url("../img/arrow-prev_mobile.jpg");
-    transform: translate(-25%, 25%);
-}
-
-/*======REVIEWS=====*/
-
-.reviews {
-    background: url("../img/reviews-bg-mobile.png") no-repeat;
-    min-height: 637px;
-}
-
-.block-title__content_grey {
-    color: #767485;
-}
-
-.reviews__item {
-    width: 267px;
-    margin: 0 auto;
-}
-
-.reviews__author {
-    text-align: center;
-}
-
-.reviews__autor-photo {
-    width: 84px;
-    height: 84px;
-    border: 7px solid white;
-    border-radius: 50%;
-}
-
-.reviews__author-name {
-    font-family: "Fira Sans Light", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #767485;
-    margin: 0;
-}
-
-.reviews__author-course {
-    font-family: "Fira Sans Light", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #767485;
-    margin: 0;
-}
-
-.reviews__author-address {
-    font-family: "Fira Sans Light", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ff6492;
-    margin: 5px;
-    padding-left: 23px;
-    position: relative;
-}
-
-.reviews__author-address::before {
-    content: "";
-    position: absolute;
-    left: 93px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../img/icon_insta.png");
-    background-repeat: no-repeat;
-}
-
-.reviews__text-block {
-    background-color: white;
-    padding: 22px;
-    margin-top: 16px;
-    position: relative;
-}
-
-.reviews__text-block::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    z-index: 2;
-    width: 20px;
-    height: 20px;
-    transform: translate(0, -50%) rotate(45deg);
-    background: white;
-}
-
-.review__text {
-    font-size: 10px;
-    line-height: 14px;
-    font-weight: 600;
-    font-style: italic;
-    text-align: justify;
-    margin: 0;
-}
-
-.reviews__photo {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
-}
-
-.see-all {
-    text-align: center;
-    color: #ff6694;
-    display: block;
-}
-
-.swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    border: 2px solid white;
-    background: white;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #9fdd56;
-}
-
-.reviews .swiper-pagination-bullets {
-    bottom: 48px;
-}
-
-/*======ADVANTAGES=====*/
-
-.advantages {
-    background: url("../img/advantages-bg-mobile.png") no-repeat;
-    margin-top: -16px;
-    font-family: "Fira Sans Light", "Arial", sans-serif;
-    text-align: center;
-}
-
-.advantage__item {
-    width: 268px;
-    margin: 0 auto;
-    padding-top: 180px;
-    padding-bottom: 50px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.advantage__item::before {
-    content: "";
-    position: absolute;
-    width: 220px;
-    height: 200px;
-    top: 0;
-}
-
-.advantage__item.advantage__item_experience::before {
-     background: url(../img/advantage-cup.png);
-    top: -20px;
-}
-
-.advantage__item.advantage__item_full-service::before {
-    background: url(../img/advantage-flowers.png);
-}
-
-.advantage__title {
-    background-color: #9ac22e;
-    flex-grow: 1;
-    font-size: 22px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: white;
-    padding: 30px;
-    margin: 0;
-}
-
-.advantage__text {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 22px;
-    line-height: 30px;
-    margin: 0;
-}
-
-.advantages .swiper-pagination-bullet-active {
-    background-color: #ff6694;
-}
     /*======PROGRAMM======*/
     .programm {
         margin-top: 483px;
@@ -746,12 +850,28 @@ form {
     .programm__item-is_cell {
         height: 80px;
         margin-bottom: 6px;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
     }
     .programm__item-is_cell-yes {
         background-size: 62px;
     }
     .programm__item-is_cell-no {
         background-size: 47px;
+    }
+    .programm__item-is_cell .programm__item-price {
+        font-family: "Fira Sans Bold", "Arial", sans-serif;
+        font-size: 45px;
+        color: #767485;
+    }
+    .programm__item-price i {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        display: inline-block;
+        background-image: url("../img/programm_price.png");
+        background-repeat: no-repeat;
     }
     .programm__item-name {
         width: 33%;
@@ -771,6 +891,28 @@ form {
     }
     .programm__item_price {
         display: flex;
+    }
+    .programm__form {
+        padding: 16px 190px;
+    }
+    .programm__form-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form__title.form__title_programm {
+        font-size: 40px;
+        line-height: 60px;
+        border-bottom-width: 3px;
+        margin-bottom: 49px;
+    }
+
+    /*======FOOTER======*/
+    .main-footer__copyright span {
+        display: inline;
+        margin-right: 5px;
+    }
+    .main-footer__copyright span:first-child::before {
+        display: none;
     }
 }
 

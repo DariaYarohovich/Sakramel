@@ -124,17 +124,18 @@
             </div>
             <div class="programm__item programm__item_price">
                 <p class="programm__item-name">Lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                <p class="programm__item-is programm__item-is_cell">18 000</p>
-                <p class="programm__item-is programm__item-is_cell">24 000</p>
+                <p class="programm__item-is programm__item-is_cell"><span class="programm__item-price">18 000<i></i></span></p>
+                <p class="programm__item-is programm__item-is_cell"><span class="programm__item-price">24 000<i></i></span></p>
             </div>
         </div>
         <form class="from programm__form">
             <p class="form__title form__title_programm">Узнать дату</p>
-            <div class="form__left">
-                <input class="form__input form__input-programm" type="text" placeholder="Ваше имя" required>
-                <input class="form__input form__input-programm" type="tel" placeholder="Ваш номер телефона" required>
-            </div>
-            <div class="form__right">
+            <div class="programm__form-wrap">
+                <div class="form__left">
+                    <input class="form__input form__input-programm" type="text" placeholder="Ваше имя" required>
+                    <input class="form__input form__input-programm" type="tel" placeholder="Ваш номер телефона" required>
+                </div>
+                <div class="form__right">
                 <label class="form__input-label">
                     <input class="form__radio-type" type="radio" name="service-type">
                     <span class="form__radio-indicator"></span>
@@ -144,6 +145,7 @@
                     <span class="form__radio-indicator"></span>
                     Базовый маникюр + педикюр</label>
                 <button class="btn form__btn programm-form__btn" type="submit">Отправить</button>
+            </div>
             </div>
         </form>
     </div>
@@ -248,8 +250,8 @@
 </div>
 <!--Мой + форма-->
 <div class="advantages">
-        <div class="advantages"><div class="block-title">
-            <h2 class="block-title__content">Преимущества школы Sakramel</h2>
+        <div class="block-title">
+            <h2 class="block-title__content block-title__content_adv">Преимущества школы Sakramel</h2>
         </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -268,19 +270,37 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <form class="form advantages__form">
-            <p class="form__title">Узнайте о дополнительных преимуществах наших курсов</p>
-            <input class="form__input" type="tel" placeholder="Ваш номер телефона">
-            <button class="btn btn-order" type="submit">Заказать звонок</button>
+        <form class="form advantages__form" action="#" method="POST">
+            <p class="form__title form__title_adv">Узнайте<br> о дополнительных преимуществах наших курсов</p>
+            <input class="form__input form__input_adv" type="tel" placeholder="Ваш номер телефона" required>
+            <button class="btn form__btn form__btn_adv" type="submit">Заказать звонок</button>
         </form>
-    </div>
 </div>
-<div class="faq"></div>
-<div class="add-questions"></div>
+<div class="faq">
+    <div class="block-title">
+        <h2 class="block-title__content block-title__content_faq">Часто задаваемые вопросы</h2>
+    </div>
+    <article class="faq__item">
+        <div class="fqa__item-title">В других школах обучение 2 месяца, почему у вас 4 дня?</div>
+        <p class="faq__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    </article>
+</div>
+<div class="add-questions">
+    <form class="add-questions__form" action="#" method="POST">
+        <p class="form__title form__title_add-questions">Записаться на обучение</p>
+        <input class="form__input form__input_add-questions" type="text" placeholder="Ваше имя" required>
+        <input class="form__input form__input_add-questions" type="tel" placeholder="Ваш номер телефона" required>
+        <button class="btn form__btn form__btn_add-questions" type="submit">Отправить</button>
+    </form>
+</div>
 <div class="map"></div>
 <!--Мой-->
 <footer class="footer">
-    <p class="main-footer__copyright"></p>
+    <p class="main-footer__copyright">
+        <span>2016</span>
+        <span>OOO «Сакрамел».</span>
+        <span>Все права защищены.</span>
+    </p>
 </footer>
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
