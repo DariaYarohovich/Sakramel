@@ -726,6 +726,8 @@ form {
     padding-bottom: 35px;
     font-family: "Fira Sans Light", "Arial", sans-serif;
     color: white;
+    z-index: 1;
+    position: relative;
 }
 
 .block-title_add-questions {
@@ -805,6 +807,55 @@ form {
     padding: 18px 0;
     font-family: "Fira Sans Medium", "Arial", sans-serif;
     font-size: 18px;
+}
+
+.faq .swiper-wrapper {
+    padding-bottom: 30px;
+}
+
+.faq .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #9fdd56;
+    border: 1px solid #9fdd56;
+}
+
+.faq .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.faq .swiper-container-horizontal > .swiper-pagination-bullets {
+
+}
+
+/*======MAP======*/
+.map {
+    height: 425px;
+    position: relative;
+    margin-top: -14px;
+    z-index: 0;
+}
+
+.map__info-block {
+    width: 268px;
+    box-sizing: border-box;
+    padding: 18px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+}
+
+.map__address {
+    font-family: "Fira Sans Light", "Arial", sans-serif;
+    color: #7f7d8d;
+    font-size: 16px;
+    line-height: 23.6px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
 }
 
 /*======FOOTER======*/

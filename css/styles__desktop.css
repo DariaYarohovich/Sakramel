@@ -215,11 +215,12 @@
 
     /*======WORKS======*/
     .works {
-        background: url(../img/works_bg.gif) no-repeat;
+        background: url(../img/works_bg.gif) no-repeat center;
         margin-top: -87px;
         padding-bottom: 0px;
         background-size: 112%;
         background-position: center 5px;
+        min-height: 1219px
     }
 
     .block-title {
@@ -227,10 +228,20 @@
     }
 
     .top-block__gallery {
+        display: flex;
+        align-items: center;
         width: 714px;
         height: 468px;
         border: 6px solid #767485;
         background: url(../img/works_slider_bg_desctop.png) no-repeat;
+        margin-right: 77px;
+    }
+
+    .swiper-button-next {
+        width: 44px;
+        height: 58px;
+        background: url(../img/arrow-next.jpg);
+        transform: translate(-18%, 0)
     }
     
     /*======FAQ======*/
@@ -311,5 +322,23 @@
     }
     .main-footer__copyright span:first-child::before {
         display: none;
+    }
+
+    .swiper-button-prev {
+        width: 44px;
+        height: 58px;
+        background: url(../img/arrow-prev.jpg);
+        transform: translate(18%, 0);
+    }
+
+    .works__wrapper {
+        margin-top: 48px;
+        display: flex;
+    }
+
+    .form__title {
+        font-size: 32px;
+        width: 193px;
+        margin: 30px auto;
     }
 }
