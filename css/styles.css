@@ -549,6 +549,7 @@ form {
     margin-top: 17px;
     position: relative;
     margin-bottom: 47px;
+    overflow: hidden;
 }
 
 .reviews__text-block::before {
@@ -576,6 +577,12 @@ form {
     display: flex;
     justify-content: space-between;
     margin: 15px 0;
+}
+
+.reviews__photo-item {
+    width: 102px;
+    height: 76px;
+    margin-right: 22px;
 }
 
 .see-all {
