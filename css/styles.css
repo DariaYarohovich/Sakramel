@@ -38,6 +38,9 @@ body {
     font-family: "Gilroy Light", "Arial", sans-serif;
     font-size: 16px;
 }
+input {
+    outline: none;
+}
 
 .container {
     padding: 0 27px;
@@ -56,6 +59,14 @@ body {
     border: none;
     background-color: #767485;
     cursor: pointer;
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+    border-radius:5px;
+    box-shadow: 0 0 2px 2px #B9B9B9;
 }
 
 /*==========HEADER=========*/
@@ -68,9 +79,22 @@ body {
     margin-left: -27px;
     margin-right: -27px;
 }
+.header__nav-block_fade {
+    animation: menu-animation-close 0.5s;
+}
 .header__nav-block_active {
     display: block;
+    animation: menu-animation 0.5s;
 }
+@keyframes menu-animation {
+     0%   { opacity: 0; }
+     100% { opacity: 1; }
+ }
+@keyframes menu-animation-close {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 .header__btn {
     display: none;
 }
@@ -352,6 +376,7 @@ body {
 }
 .form__input.form__input-programm {
     margin-bottom: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .form__right {
     text-align: left;
@@ -408,7 +433,11 @@ form {
     color: #767485;
     text-align: center;
     border: none;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.form__input:active,
+.form__input:focus {
+    box-shadow: 0 0 1px 1px #B9B9B9;
 }
 .form__btn {
     width: 100%;
@@ -627,13 +656,16 @@ form {
 }
 
 .advantage__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     background-color: #9ac22e;
     flex-grow: 1;
     font-size: 22px;
     line-height: 24px;
     text-transform: uppercase;
     color: white;
-    padding: 30px;
     margin: 0;
     box-shadow: 0 -5px 10px 3px rgba(0,0,0,0.2);
     position: relative;
@@ -645,11 +677,13 @@ form {
     font-size: 22px;
     line-height: 30px;
     margin: 0;
+    padding: 10px;
+    min-height: 230px;
 }
 
 .advantages .swiper-pagination {
     position: static;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .advantages .swiper-pagination-bullet-active {
@@ -679,6 +713,7 @@ form {
 .form__input_adv {
     padding: 17px 15px;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 .form__btn_adv {
     padding: 14px 12px;
@@ -754,6 +789,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: auto;
     align-items: center;
     text-align: center;
     background-color: rgba(255, 102, 148, 0.7);
@@ -787,12 +823,12 @@ form {
 
 .add-questions .swiper-pagination {
     position: static;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .add-questions__form {
     padding-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .form__title_add-questions {
@@ -807,6 +843,7 @@ form {
     padding: 20px 15px;
     font-family: "Fira Sans Regular", "Arial", sans-serif;
     font-size: 18px;
+    background-color: #fff;
 }
 
 .form__btn_add-questions {
@@ -838,7 +875,7 @@ form {
 .map {
     height: 425px;
     position: relative;
-    margin-top: -14px;
+    margin-top: -40px;
     z-index: 0;
 }
 
