@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .form__input {
         background: rgba(255, 255, 255, 0.8);
     }
@@ -373,4 +373,31 @@
         top: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
     }
+    
+    .review__text {
+        font-size: 17px;
+        line-height: 22.67px;
+        color: #767485;
+    }
+
+    .reviews__photo-item {
+        width: 144px;
+        height: 108px;
+        margin-right: 0;
+    }
+
+    .see-all {
+        text-align: right;
+        font-size: 18px;
+        line-height: 24px;
+        color: #767485;
+        font-weight: 600;
+    }
+    
+    .review__desctop-slider {
+        overflow-y: scroll;
+        height: 470px;
+        width: 830px;
+    }
+ 
 }
