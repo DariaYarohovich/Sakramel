@@ -256,8 +256,9 @@
     /*======FAQ======*/
     .faq {
         background-image: url("../img/faq_bg_desc.png");
-        background-position: center 0;
-        padding: 300px 273px 470px 273px;
+        background-position: center -121px;
+        padding: 185px 273px 445px 273px;
+        margin-top: -60px;
     }
     .faq__item {
         margin-bottom: 15px;
@@ -275,15 +276,17 @@
     /*======ADVANTAGES======*/
     .advantages {
         background-image: url("../img/advantages-bg-desk.png");
-        background-size: 130%;
+        background-size: 132%;
         background-position: center -90px;
+        padding-bottom: 114px;
+        position: relative;
     }
-    .swiper-wrapper {
+     .advantages__items-container{
         width: 1200px;
         margin: 0 auto;
         justify-content: space-between;
     }
-    .swiper-slide {
+    .advantages__item {
         width: 21% !important;
     }
     .advantage__title {
@@ -328,6 +331,63 @@
     .advantages__form-wrap {
         display: flex;
         justify-content: space-between;
+    }
+
+    /*======ADD-QUESTIONS======*/
+    .add-questions {
+        background-image: url("../img/addQuestion-bg-desktop.png");
+        background-position: center -330px;
+        background-size: 122%;
+        padding-bottom: 72px;
+    }
+    .add-questions__container {
+        margin-top: 175px;
+        width: 100%;
+    }
+    .block-title__add-questions {
+        padding: 20px;
+        padding-top: 0;
+        line-height: 50px;
+    }
+    .add-questions__question {
+        height: 40px;
+    }
+
+    .swiper-wrapper__add-questions {
+        transform: translate3d(0, 0 ,0) !important;
+        box-sizing: border-box;
+        padding: 0 70px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .add-questions .swiper-pagination {
+        margin-top: 30px;
+    }
+    .add-questions__slide {
+        width: 320px !important;
+        min-height: 370px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .add-questions__slide:last-child {
+        margin-right: 0;
+    }
+
+    .form__title_add-questions {
+        font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+    }
+    .add-questions__form-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form__input_add-questions {
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+
+    /*======MAP======*/
+    .map {
+        margin-top: -62px;
     }
     /*======FOOTER======*/
     .main-footer__copyright span {
