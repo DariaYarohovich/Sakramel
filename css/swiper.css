@@ -12,7 +12,14 @@
  *
  * Released on: December 13, 2016
  */
-.swiper-container {
+
+.swiper-container2 {
+    width: 100%;
+    height: 370px;
+}
+
+.swiper-container,
+.swiper-container2 {
     margin-left: auto;
     margin-right: auto;
     position: relative;
