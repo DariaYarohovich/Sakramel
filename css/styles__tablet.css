@@ -1,0 +1,100 @@
+@media (min-width: 321px) and (max-width: 1199px) {
+	body{
+		width: 100%;
+		height: auto;
+	}
+
+	.top-block{
+	    background-image: url(../img/top-block_bg-desc.png);
+	    background-size: cover;
+	    background-position: center -75px;
+	    padding-bottom: 71px;
+	    min-height: 420px;
+	    background-repeat: repeat-x;
+	    position: relative;
+		z-index: 4;
+	}
+	.top-block__title span{
+		background-size: initial;
+		background-position: center 16px;
+	}
+	.works{
+		background: url(../img/works_bg.png) repeat-x center;
+		background-size: cover;
+		margin-top: -146px;
+		padding-top: 40px;
+		padding-bottom: 60px;
+		background-position: center 0;
+		position: relative;
+		z-index: 3;
+	}
+	.programm {
+	    background-image: url(../img/programm_bg-mobile.png);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center -433px;
+	    padding-top: 68px;
+	    padding-bottom: 50px;
+	    position: relative;
+	    z-index: 2;
+	    margin-top: -80px;
+	}
+	.reviews{
+		background: url("../img/reviews-bg-mobile.png") no-repeat;
+		background-position: 0 -397px;
+		padding-top: 60px;
+		margin-top: -17px;
+		box-sizing: border-box;
+		padding-bottom: 26px;
+		position: relative;
+		background-size: cover;
+		// background-repeat: repeat-x;
+	}
+	.advantages{
+		margin-top: 0;
+	}
+	/* .faq{
+		background-repeat: no-repeat;
+		// background-size: cover;
+		margin: 0 auto;
+		max-width: 260px;
+	}
+	.faq-wrap{
+		background: #E3E3E3;
+	} */
+
+	.faq {
+        background-image: url("../img/faq_bg_tablet.jpg");
+        background-position: center -121px;
+    }
+    .faq__item {
+        margin-bottom: 15px;
+    }
+    .fqa__item-title {
+        font-size: 28px;
+        border-width: 2px;
+    }
+    .faq__item-content {
+        font-family: "Fira Sans LightItalic", "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+    }
+	
+	.review__desctop-slider {
+		width: 80%;
+		height: 470px;
+		overflow-y: scroll;
+		margin: 0 auto;    
+	}
+
+	.add-questions {
+	    background-image: url(../img/addQuestion-bg-desktop.png);
+	    background-position: center -383px;
+	    background-size: 1615px;
+	    padding-bottom: 72px;
+	}
+
+	.block-title__add-questions {
+
+	}
+}
